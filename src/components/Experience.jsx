@@ -9,10 +9,12 @@ import { SectionWrapper } from '../hoc';
 import { textVariant } from '../utils/motion';
 
 const ExperienceCard=({experience})=>(
+  <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)',}}>
   <VerticalTimelineElement 
-    contentStyle={{background: '#1d1836',color:'#fff'}}
+    contentStyle={{background: 'rgba(75, 0, 130, 0.8)',color:'#FFA500',boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)'}}
     contentArrowStyle={{borderRight:'7px solid #232631'}}
-    date={experience.date}
+    style={{marginBottom: '20px'}}
+
     iconStyle={{background:experience.iconBg}}
     icon={
       <div className="flex justify-center items-center w-full h-full">
@@ -32,11 +34,11 @@ const ExperienceCard=({experience})=>(
       >{experience.company_name}</p>
     </div>
 
-    <ul className="mt-5 list-disc ml-5 space-y-2">
+    <ul className="mt-5 list-none ml-5 space-y-2">
       {experience.points.map((point,index)=>(
         <li
           key={`experience-point-${index}`}
-          className="text-white-100 text-[14px] pl-1 tracking-wider"
+          className="text-white-100 text-[14px]  tracking-wider"
         >
           {point}
         </li>
@@ -45,18 +47,21 @@ const ExperienceCard=({experience})=>(
 
     
   </VerticalTimelineElement>
+  </div>
 )
 
 const Experience = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>What I have done so far</p>
-        <h2 className={styles.sectionHeadText}>Work Experience.</h2>
+        {/* <p className={styles.sectionSubText}>How it</p> */}
+        <h2 className={styles.sectionHeadText}>How it 
+          <span className="bg-gradient-to-r from-yellow-400 to-pink-500 text-transparent bg-clip-text"> Works ?</span>
+        </h2>
       </motion.div>
 
       <div className="mt-20 flex flex-col">
-        <VerticalTimeline>
+        <VerticalTimeline layout="1-column-left">
           {experiences.map((experience,index)=>(
             <ExperienceCard key={index} experience={experience}/>
           ))}

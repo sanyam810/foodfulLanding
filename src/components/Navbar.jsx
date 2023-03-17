@@ -32,6 +32,7 @@ const Navbar = () => {
              </span> &nbsp;
             <span className="sm:block hidden">Saini</span>
             </p> */}
+            
         </Link>
         <ul className="list-none hidden sm:flex flex-row gap-10">
           {navLinks.map((link)=>
@@ -40,7 +41,7 @@ const Navbar = () => {
               className={`${
                 active===link.title
                 ?"text-white font-extrabold"
-                :"font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600"
+                :"font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-pink-600"
               } hover:text-white text-[18px] font-medium cursor-pointer`}
               onClick={()=> setActive(link.title)}
             >
