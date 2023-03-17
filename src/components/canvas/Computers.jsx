@@ -30,6 +30,32 @@ const Computers = ({isMobile}) => {
   )
 }
 
+const Burger = ({isMobile}) => {
+
+  const burger = useGLTF('./burger/scene.gltf')
+
+  return (
+    <mesh>
+      <hemisphereLight intensity={0.15} groundColor="black"/>
+      <pointLight intensity={1}/>
+      <spotLight 
+        position={[20,50,-10]}
+        angle={0.12}
+        penumbra={1}
+        intensity={1}
+        castShadow
+        shadow-mapSize={1024}
+      />
+      <primitive 
+        object={burger.scene}
+        scale={isMobile?0.5:.07}
+        position={isMobile?[0,-3,3]:[0,-2,0]}
+        rotation={[0,1,1]}
+      />
+    </mesh>
+  )
+}
+
 const ComputersCanvas =()=>{
 
   const[isMobile,setIsMobile]=useState(false);
@@ -69,6 +95,7 @@ const ComputersCanvas =()=>{
           minPolarAngle={Math.PI/2}
         />
         <Computers isMobile={isMobile}/>
+        <Burger isMobile={isMobile}/>
       </Suspense>
 
       <Preload all/>

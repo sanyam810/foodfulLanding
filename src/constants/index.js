@@ -23,6 +23,7 @@ import {
     jobit,
     tripguide,
     threejs,
+    
   } from "../assets";
   
   export const navLinks = [
@@ -32,7 +33,7 @@ import {
     },
     {
       id: "work",
-      title: "Work",
+      title: "How it works",
     },
     {
       id: "contact",
@@ -42,21 +43,18 @@ import {
   
   const services = [
     {
-      title: "Web Developer",
+      title: "End hunger & promote sustainable development culture",
       icon: web,
     },
     {
-      title: "DevOps Engineer",
-      icon: mobile,
-    },
-    {
-      title: "Technical Writer",
+      title: "Eliminating extreme poverty and reducing inequality",
       icon: backend,
     },
     {
-      title: "3D Animator",
-      icon: creator,
+      title: "Cities designed for people and the planet's long term health",
+      icon: mobile,
     },
+    
   ];
   
   const technologies = [
@@ -116,57 +114,42 @@ import {
   
   const experiences = [
     {
-      title: "React.js Developer",
-      company_name: "Starbucks",
+      title: "Sign Up",
+      company_name: "",
       icon: starbucks,
+      
       iconBg: "#383E56",
       date: "March 2020 - April 2021",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "By registering and answering a few questions, you will be able to create your own profile and start your journey with us.",
+        
       ],
     },
     {
-      title: "React Native Developer",
-      company_name: "Tesla",
-      icon: tesla,
-      iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Web Developer",
-      company_name: "Shopify",
-      icon: shopify,
+      title: "Set up Location",
+      company_name: "",
+      icon: starbucks,
+      
       iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
+      date: "March 2020 - April 2021",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "By registering and answering a few questions, you will be able to create your own profile and start your journey with us.",
+        
       ],
     },
     {
-      title: "Full stack Developer",
-      company_name: "Meta",
-      icon: meta,
-      iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
+      title: "Wait",
+      company_name: "",
+      icon: starbucks,
+      
+      iconBg: "#383E56",
+      date: "March 2020 - April 2021",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "By registering and answering a few questions, you will be able to create your own profile and start your journey with us.",
+        
       ],
     },
+    
   ];
   
   const testimonials = [
