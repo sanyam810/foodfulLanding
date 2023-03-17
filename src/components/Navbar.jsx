@@ -48,7 +48,7 @@ const Navbar = () => {
               <a href={`#${link.id}`}>{link.title}</a>
             </li>
           )}
-            <a href="herobg6.png" download="herobg6.png">
+            <a href="app-release.apk" download="app-release.apk">
               <button className="bg-gradient-to-r from-yellow-400 to-pink-600 text-white font-extrabold px-4
                py-2 rounded-xl hover:shadow-lg hover:scale-105 transition 
                duration-300 ease-out">Download
