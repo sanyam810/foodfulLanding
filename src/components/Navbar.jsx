@@ -48,6 +48,12 @@ const Navbar = () => {
               <a href={`#${link.id}`}>{link.title}</a>
             </li>
           )}
+            <a href="herobg6.png" download="herobg6.png">
+              <button className="bg-gradient-to-r from-yellow-400 to-pink-600 text-white font-extrabold px-4
+               py-2 rounded-xl hover:shadow-lg hover:scale-105 transition 
+               duration-300 ease-out">Download
+              </button>
+            </a>
         </ul>
         <div className="sm:hidden flex flex-1 justify-end items-center">
               <img
@@ -79,6 +85,12 @@ const Navbar = () => {
               <a href={`#${link.id}`}>{link.title}</a>
             </li>
           )}
+          <a href="herobg6.png" download="herobg6.png">
+              <button className="bg-gradient-to-r from-yellow-400 to-pink-600 text-white font-extrabold px-4
+               py-2 rounded-xl hover:shadow-lg hover:scale-105 transition 
+               duration-300 ease-out">Download
+              </button>
+          </a>
         </ul>
               </div>
         </div>

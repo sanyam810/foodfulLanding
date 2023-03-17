@@ -22,8 +22,8 @@ const Computers = ({isMobile}) => {
       />
       <primitive 
         object={computer.scene}
-        scale={isMobile?0.7:2.5}
-        position={isMobile?[0,-3,-2.2]:[5.5,-3,-1]}
+        scale={isMobile?2:2.5}
+        position={isMobile?[0,-2,-3.5]:[5.5,-3,-1]}
         rotation={[0,0,0]}
       />
     </mesh>
@@ -48,9 +48,9 @@ const Burger = ({isMobile}) => {
       />
       <primitive 
         object={burger.scene}
-        scale={isMobile?0.5:.07}
-        position={isMobile?[0,-3,3]:[0,-2,0]}
-        rotation={[0,1,1]}
+        scale={isMobile?0.07:.1}
+        position={isMobile?[0,-1.7,1]:[0,-2,0]}
+        rotation={[0,.5,.5]}
       />
     </mesh>
   )
