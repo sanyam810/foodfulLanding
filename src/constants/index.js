@@ -121,31 +121,31 @@ import {
       iconBg: "#383E56",
       date: "March 2020 - April 2021",
       points: [
-        "By registering and answering a few questions, you will be able to create your own profile and start your journey with us.",
+        "Enter your email address and create a password to sign up for an account.",
         
       ],
     },
     {
-      title: "Set up Location",
+      title: "Description",
       company_name: "",
       icon: starbucks,
       
       iconBg: "#383E56",
       date: "March 2020 - April 2021",
       points: [
-        "By registering and answering a few questions, you will be able to create your own profile and start your journey with us.",
+        "Enter information regarding food",
         
       ],
     },
     {
-      title: "Wait",
+      title: "Location",
       company_name: "",
       icon: starbucks,
       
       iconBg: "#383E56",
       date: "March 2020 - April 2021",
       points: [
-        "By registering and answering a few questions, you will be able to create your own profile and start your journey with us.",
+        "Pick out a location",
         
       ],
     },
