@@ -116,7 +116,7 @@ import {
     {
       title: "Sign Up",
       company_name: "",
-      icon: starbucks,
+      icon: web,
       
       iconBg: "#383E56",
       date: "March 2020 - April 2021",
@@ -128,7 +128,7 @@ import {
     {
       title: "Description",
       company_name: "",
-      icon: starbucks,
+      icon: web,
       
       iconBg: "#383E56",
       date: "March 2020 - April 2021",
@@ -140,7 +140,7 @@ import {
     {
       title: "Location",
       company_name: "",
-      icon: starbucks,
+      icon: web,
       
       iconBg: "#383E56",
       date: "March 2020 - April 2021",

@@ -9,9 +9,9 @@ import { SectionWrapper } from '../hoc';
 import { textVariant } from '../utils/motion';
 
 const ExperienceCard=({experience})=>(
-  <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)',}}>
+  
   <VerticalTimelineElement 
-    contentStyle={{background: 'rgba(75, 0, 130, 0.8)',color:'#FFA500',boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)'}}
+    contentStyle={{background: 'rgba(75, 0, 130, 0.4)',color:'#FFA500',boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)'}}
     contentArrowStyle={{borderRight:'7px solid #232631'}}
     style={{marginBottom: '20px'}}
 
@@ -27,7 +27,7 @@ const ExperienceCard=({experience})=>(
     }
   >
     <div>
-      <h3 className="text-white text-[24px] font-bold">{experience.title}</h3>
+      <h3 className=" text-[24px] font-bold bg-gradient-to-r from-yellow-400 to-pink-500 text-transparent bg-clip-text ">{experience.title}</h3>
 
       <p className="text-secondary text-[16px] font-semibold"
         style={{margin:0}}
@@ -47,7 +47,7 @@ const ExperienceCard=({experience})=>(
 
     
   </VerticalTimelineElement>
-  </div>
+  
 )
 
 const Experience = () => {
@@ -61,7 +61,7 @@ const Experience = () => {
       </motion.div>
 
       <div className="mt-20 flex flex-col">
-        <VerticalTimeline layout="1-column-left">
+        <VerticalTimeline >
           {experiences.map((experience,index)=>(
             <ExperienceCard key={index} experience={experience}/>
           ))}

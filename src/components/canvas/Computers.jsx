@@ -10,10 +10,10 @@ const Computers = ({isMobile}) => {
 
   return (
     <mesh>
-      <hemisphereLight intensity={0.15} groundColor="black"/>
-      <pointLight intensity={1}/>
+      <hemisphereLight intensity={0.001} groundColor="black"/>
+      <pointLight intensity={0.5}/>
       <spotLight 
-        position={[-20,50,10]}
+        position={[0,0,0]}
         angle={0.12}
         penumbra={1}
         intensity={1}
